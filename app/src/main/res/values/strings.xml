@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">LAWIQ</string>
+    <string name="sorcerers_of_code">Sorcerers Of Code</string>
+    <string name="from">From</string>
+    <string name="todo">TODO</string>
+    <string name="get_started">Get started</string>
+    <string name="login">Login</string>
+    <string name="enter_your_email">Enter Your Email</string>
+    <string name="google">Google</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="don_t_remember_password_recover_it">Forgot Password?</string>
+    <string name="signup">SignUp</string>
+    <string name="login1">Login</string>
+    <string name="enter_your_password_again">Enter Your Password Again</string>
+    <string name="facebook_app_id">YOUR_FACEBOOK_APP_ID</string> <!-- Replace with your actual Facebook App ID -->
+    <string name="fb_login_protocol_scheme">fbYOUR_FACEBOOK_APP_ID</string> <!-- Replace this with your App ID -->
+    <string name="enter_your_name">Enter Your Name</string>
+    <string name="name">Name</string>
+    <string name="default_web_client_id">61477457239-9rebk1bqecrof8ut87rqebsp6lsiibf4.apps.googleusercontent.com</string>
+
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <string name="union_government_articles">Union Government Articles</string>
+
+</resources>

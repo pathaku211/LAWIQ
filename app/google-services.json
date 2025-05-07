@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "61477457239",
+    "project_id": "lawiq-72944",
+    "storage_bucket": "lawiq-72944.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:61477457239:android:02a9762fcd7b7010570212",
+        "android_client_info": {
+          "package_name": "com.example.lawiq"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZqYRDNrRI-IZMXCR8w6r1UEI3a7Lx1qI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

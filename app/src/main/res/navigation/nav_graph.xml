@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/articlesFragment">
+
+    <fragment
+        android:id="@+id/articlesFragment"
+        android:name="com.example.lawiq.ArticlesFragment"
+        android:label="Articles"
+        tools:layout="@layout/fragment_article" />
+
+    <fragment
+        android:id="@+id/unionGovtFragment"
+        android:name="com.example.lawiq.UnionGovtFragment"
+        android:label="Union Government"
+        tools:layout="@layout/fragment_union_govt" />
+
+    <fragment
+        android:id="@+id/stateGovtFragment"
+        android:name="com.example.lawiq.StateGovtFragment"
+        android:label="State Government"
+        tools:layout="@layout/fragment_state_govt" />
+
+</navigation>

@@ -1,0 +1,63 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.lawiq">
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LAWIQ"
+        tools:targetApi="31">
+
+        <!-- Splash Screen (MainActivity) -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Get Started Screen -->
+        <activity
+            android:name=".GetStarted"
+            android:exported="true" />
+
+        <!-- Login Screen -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+
+        <!-- Sign Up Screen -->
+        <activity
+            android:name=".Sign_up"
+            android:exported="true" />
+
+        <!-- Add Firebase and Play Services Metadata -->
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false" />
+
+        <!-- Quiz Activity -->
+        <activity
+            android:name=".QuizActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="YOUR_ADMOB_APP_ID" />
+    </application>
+
+</manifest>

@@ -1,0 +1,935 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/quiz"
+    tools:context=".YourActivityName">
+
+    <!-- Heading -->
+    <TextView
+        android:id="@+id/headingText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Indian Constitution Quizzes"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="sans-serif-medium"
+        android:padding="16dp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- ScrollView for Cards -->
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/headingText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:id="@+id/cardContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <!-- Example Card 1 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_union"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="12dp"
+                android:onClick="openUnionQuiz">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Union and its Territory (Articles 1 - 4)"
+                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_arrow_right"
+                        android:contentDescription="Arrow" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Example Card 2 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_Citizenship"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="12dp"
+                android:onClick="openUnionQuiz">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Citizenship (Articles 5 – 11)"
+                        android:textSize="16sp"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_arrow_right"
+                        android:contentDescription="Arrow" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Example Card 3 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_Fundamental_Rights"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="12dp"
+                android:onClick="openUnionQuiz">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Fundamental Rights (Articles 12 – 35)"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:textAlignment="center"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_arrow_right"
+                        android:contentDescription="Arrow" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Example Card 4 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_Directive_Principles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="12dp"
+                android:onClick="openUnionQuiz">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Directive Principles of State Policy (Articles 36 – 51)"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:textAlignment="center"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_arrow_right"
+                        android:contentDescription="Arrow" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Example Card 5 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_Fundamental_Duties"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="12dp"
+                android:onClick="openFundamentalDutiesQuiz">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Fundamental Duties (Article 51A)"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:textAlignment="center"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_arrow_right"
+                        android:contentDescription="Arrow" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Example Card 6 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_The_Union"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="12dp"
+                android:onClick="openTheUnionQuiz">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="The Union (Articles 52 – 151)"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:textAlignment="center"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_arrow_right"
+                        android:contentDescription="Arrow" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Example Card 7 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_The_States"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="12dp"
+                android:onClick="openTheStatesQuiz">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="The States (Articles 152 – 237)"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:textAlignment="center"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_arrow_right"
+                        android:contentDescription="Arrow" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Example Card 8 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_Union_Territories"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="12dp"
+                android:onClick="openUnionTerritoriesQuiz">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="The Union Territories (Articles 239 – 242)"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:textAlignment="center"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_arrow_right"
+                        android:contentDescription="Arrow" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Example Card 9 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_Panchayats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="12dp"
+                android:onClick="openPanchayatsQuiz">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="The Panchayats (Articles 243 – 243-O)"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:textAlignment="center"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_arrow_right"
+                        android:contentDescription="Arrow" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Example Card 10 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_Municipalities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="12dp"
+                android:onClick="openMunicipalitiesQuiz">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="The Municipalities (Articles 243-P – 243-Z-G)"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:textAlignment="center"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_arrow_right"
+                        android:contentDescription="Arrow" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Example Card 11 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_Cooperative_Societies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="12dp"
+                android:onClick="openCooperativeSocietiesQuiz">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="The Co-operative Societies (Articles 243-Z-H – 243-Z-T)"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:textAlignment="center"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_arrow_right"
+                        android:contentDescription="Arrow" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Example Card 12 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_Scheduled_Tribal_Areas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="12dp"
+                android:onClick="openScheduledTribalAreasQuiz">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="The Scheduled and Tribal Areas (Articles 244 – 244A)"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:textAlignment="center"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_arrow_right"
+                        android:contentDescription="Arrow" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Example Card 13 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_Relations_Union_States"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="12dp"
+                android:onClick="openRelationsUnionStatesQuiz">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Relations between the Union and the States (Articles 245 – 263)"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:textAlignment="center"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_arrow_right"
+                        android:contentDescription="Arrow" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Example Card 14 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_Finance_Property_Contracts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="12dp"
+                android:onClick="openFinancePropertyContractsQuiz">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Finance, Property, Contracts and Suits (Articles 264 – 300-A)"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:textAlignment="center"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_arrow_right"
+                        android:contentDescription="Arrow" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Example Card 15 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_Trade_Commerce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="12dp"
+                android:onClick="openTradeCommerceQuiz">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Trade and Commerce within the Territory of India (Articles 301 – 307)"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:textAlignment="center"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_arrow_right"
+                        android:contentDescription="Arrow" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Example Card 16 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_Services_Union_States"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="12dp"
+                android:onClick="openServicesUnionStatesQuiz">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Services under the Union and States (Articles 308 – 323)"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:textAlignment="center"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_arrow_right"
+                        android:contentDescription="Arrow" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Example Card 17 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_Tribunals"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="12dp"
+                android:onClick="openTribunalsQuiz">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tribunals (Articles 323-A – 323-B)"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:textAlignment="center"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_arrow_right"
+                        android:contentDescription="Arrow" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Example Card 18 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_Elections"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="12dp"
+                android:onClick="openElectionsQuiz">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Elections (Articles 324 – 329)"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:textAlignment="center"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_arrow_right"
+                        android:contentDescription="Arrow" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Example Card 22 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_Special_Provisions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="12dp"
+                android:onClick="openSpecialProvisionsQuiz">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Special Provisions relating to certain classes (Articles 330 – 342)"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:textAlignment="center"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_arrow_right"
+                        android:contentDescription="Arrow" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Example Card 19 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_Official_Language_Union"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="12dp"
+                android:onClick="openOfficialLanguageUnionQuiz">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Official Language of the Union (Articles 343 – 351)"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:textAlignment="center"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_arrow_right"
+                        android:contentDescription="Arrow" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Example Card 20 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_Miscellaneous"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="12dp"
+                android:onClick="openMiscellaneousQuiz">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Miscellaneous (Articles 352 – 367)"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:textAlignment="center"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_arrow_right"
+                        android:contentDescription="Arrow" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Example Card 21 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_Amendments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="12dp"
+                android:onClick="openAmendmentsQuiz">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Amendments (Article 368)"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:textAlignment="center"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_arrow_right"
+                        android:contentDescription="Arrow" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Example Card 23 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_Temporary_Transitional_Special_Provisions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="12dp"
+                android:onClick="openTemporaryTransitionalSpecialProvisionsQuiz">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Temporary, Transitional and Special Provisions (Articles 369 – 392)"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:textAlignment="center"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_arrow_right"
+                        android:contentDescription="Arrow" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Example Card 24 -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_Part_XXII"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="12dp"
+                android:onClick="openPartXXIIQuiz">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Short title, Commencement, Authoritative Text in Hindi and Repeals (Articles 393 – 395)"
+                        android:textSize="16sp"
+                        android:textColor="#000000"
+                        android:textAlignment="center"
+                        android:fontFamily="sans-serif-medium" />
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_arrow_right"
+                        android:contentDescription="Arrow" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- You can duplicate the above card and change text + id for more sections -->
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
